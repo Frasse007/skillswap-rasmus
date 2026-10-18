@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 // Body content created in collaboration with AI chatbots
@@ -20,9 +20,9 @@ function App() {
   return (
     <div className="app-container">
       {/* Header containing site name and navigation placeholder */}
-      <header className='site-header'>
+      <header className="site-header">
         <div className="site-name">Skill Swap</div>
-        <nav className='site-nav'>
+        <nav className="site-nav">
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#browse">Browse Skills</a></li>
@@ -33,7 +33,7 @@ function App() {
       </header>
 
       {/* Main content container */}
-      <main className='site-main'>
+      <main className="site-main">
         {/* Hero Section */}
         <section className="hero-section">
           <h1>Learn, Teach, and Exchange Skills</h1>
@@ -83,7 +83,7 @@ function App() {
       </main>
 
       {/* Footer containing placeholder footer content */}
-      <footer className='site-footer'>
+      <footer className="site-footer">
         <p>&copy; 2026 Skill Swap Platform. All rights reserved.</p>
       </footer>
     </div>
