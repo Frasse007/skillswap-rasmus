@@ -6,25 +6,25 @@ function App() {
   return (
     <div className="app-container">
       {/* Header containing site name and navigation placeholder */}
-      <header>
+      <header className='site-header'>
         <div className="site-name">Skill Swap</div>
-        <nav>
+        <nav className='site-nav'>
           <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#tutors">Browse Tutors</a></li>
-            <li><a href="#availability">Availability</a></li>
-            <li><a href="#profile">My Profile</a></li>
+            <li><a href="#browse">Browse Skills</a></li>
+            <li><a href="#offer">Offer Skills</a></li>
+            <li><a href="#about">About</a></li>
           </ul>
         </nav>
       </header>
 
       {/* Main content container */}
-      <main>
+      <main className='site-main'>
         {/* Hero Section */}
         <section className="hero-section">
           <h1>Learn, Teach, and Exchange Skills</h1>
           <p>Connect with peer tutors to master new subjects or share your own expertise.</p>
-          <a href="#tutors" className="btn-primary">Find a Tutor</a>
+          <a href="#browse" className="btn-primary">Find a Tutor</a>
         </section>
 
         {/* Placeholder content for skill offerings */}
@@ -35,7 +35,7 @@ function App() {
       </main>
 
       {/* Footer containing placeholder footer content */}
-      <footer>
+      <footer className='site-footer'>
         <p>&copy; 2026 Skill Swap Platform. All rights reserved.</p>
       </footer>
     </div>
