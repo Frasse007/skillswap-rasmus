@@ -101,26 +101,113 @@ body {
   background-color: #1d4ed8;
 }
 
-/* Skill Offerings Placeholder */
-.skill-offerings {
-  background: white;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+/* Skill Cards Grid & Styling */
+.section-subtitle {
+  color: #64748b;
+  margin-bottom: 1.5rem;
 }
 
-.skill-offerings h2 {
-  font-size: 1.75rem;
-  margin-bottom: 0.5rem;
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.skill-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-color: #cbd5e1;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.skill-card h3 {
+  font-size: 1.15rem;
   color: #1e293b;
 }
 
-/* Footer Styling */
-.site-footer {
-  background-color: #1e293b;
-  color: #94a3b8;
-  text-align: center;
-  padding: 1.5rem;
-  margin-top: auto;
+.card-price {
+  background-color: #dbeafe;
+  color: #1e40af;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.card-provider {
   font-size: 0.9rem;
+  color: #475569;
+  margin-bottom: 0.75rem;
+}
+
+.card-desc {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin-bottom: 1rem;
+}
+
+.click-hint {
+  font-size: 0.75rem;
+  color: #2563eb;
+  font-weight: 500;
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+.card-extra-details {
+  margin-top: 0.75rem;
+  padding-top: 0.5rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.card-extra-details hr {
+  border: none;
+  border-top: 1px solid #e2e8f0;
+  margin-bottom: 0.75rem;
+}
+
+.card-extra-details p {
+  font-size: 0.85rem;
+  color: #475569;
+  margin-bottom: 0.75rem;
+}
+
+.btn-book {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+.btn-book:hover {
+  background-color: #059669;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
 }
